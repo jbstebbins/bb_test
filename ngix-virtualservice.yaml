@@ -1,0 +1,17 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: nginx-virtualservice
+  labels:
+    cluster: test
+spec:
+  gateways:
+  - public.istio-system.svc.cluster.local
+  hosts:
+  - nginx.tst.bigbang.dev
+  http:
+  - route:
+    - destination:
+         host: nginx-service
+         port:
+            number: 7000
