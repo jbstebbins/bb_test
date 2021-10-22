@@ -1,0 +1,11 @@
+resources:
+- namespace.yaml
+- deployment.yaml
+- service.yaml
+
+# declare ConfigMap from a ConfigMapGenerator
+configMapGenerator:
+- name: my-nginx-config
+  files:
+    # configfile is used as key
+    - configs/nginx.conf
