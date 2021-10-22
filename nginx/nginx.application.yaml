@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'ssh://git@REPLACE_ME_WITH_YOUR_GIT_REPO_IP:22/home/git/bootstrap.git'
+    repoURL: 'https://github.com/jbstebbins/bb_test.git'
     path: apps/nginx/dev
     targetRevision: HEAD
   destination:
