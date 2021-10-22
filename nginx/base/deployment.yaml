@@ -20,7 +20,7 @@ spec:
       - name: nginx
         image: docker.io/iahmad/ubi8-nginx-high-port:8.1
         env:
-        - name: MYNAME
+        - name: test
           value: "Residency-Participant"
         ports:
         - containerPort: 7000
