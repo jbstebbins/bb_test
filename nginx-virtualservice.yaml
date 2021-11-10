@@ -4,11 +4,12 @@ metadata:
   name: nginx-virtualservice
   labels:
     cluster: test
+  namespace: nginx
 spec:
   gateways:
-  - public.istio-system.svc.cluster.local
+  - istio-system/public
   hosts:
-  - nginx.tst.bigbang.dev
+  - nginx.bigbang.dev
   http:
   - route:
     - destination:
