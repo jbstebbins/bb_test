@@ -4,7 +4,7 @@ metadata:
   name: nginx-virtualservice
   labels:
     cluster: test
-  namespace: nginx
+  namespace: argocd
 spec:
   gateways:
   - istio-system/public
